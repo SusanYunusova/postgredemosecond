@@ -1,19 +1,20 @@
-package com.oktaylessons.postgreDemoSecond.api.crudServices;
+package com.oktaylessons.postgreDemoSecond.api.model;
 
 import java.util.Date;
 
-public class UpdateUserRequest {
+public class SaveUserRequest {
     private int id;
     private String name;
+
     private String lastName;
     private Date birthDate;
 
-    public UpdateUserRequest() {
+    public SaveUserRequest() {
     }
 
     @Override
     public String toString() {
-        return "UpdateUserRequest{" +
+        return "SaveUserRequest{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -53,7 +54,7 @@ public class UpdateUserRequest {
         this.birthDate = birthDate;
     }
 
-    public UpdateUserRequest(int id, String name, String lastName, Date birthDate) {
+    public SaveUserRequest(int id, String name, String lastName, Date birthDate) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;

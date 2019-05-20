@@ -1,6 +1,6 @@
-package com.oktaylessons.postgreDemoSecond.api.searchServices;
+package com.oktaylessons.postgreDemoSecond.api.dto;
 
-import com.oktaylessons.postgreDemoSecond.entity.User;
+import com.oktaylessons.postgreDemoSecond.api.model.User;
 
 import java.util.List;
 
@@ -30,6 +30,9 @@ public class ResponseSearchListUser {
     }
 
     public String getServerMessage(String user_not_found) {
+        return serverMessage;
+    }
+    public String getServerMessage() {
         return serverMessage;
     }
 

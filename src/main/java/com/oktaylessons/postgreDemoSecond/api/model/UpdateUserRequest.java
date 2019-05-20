@@ -1,19 +1,19 @@
-package com.oktaylessons.postgreDemoSecond.api.crudServices;
+package com.oktaylessons.postgreDemoSecond.api.model;
 
 import java.util.Date;
 
-public class DeleteUserRequest {
+public class UpdateUserRequest {
     private int id;
     private String name;
     private String lastName;
     private Date birthDate;
 
-    public DeleteUserRequest() {
+    public UpdateUserRequest() {
     }
 
     @Override
     public String toString() {
-        return "DeleteUserRequest{" +
+        return "UpdateUserRequest{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -53,7 +53,7 @@ public class DeleteUserRequest {
         this.birthDate = birthDate;
     }
 
-    public DeleteUserRequest(int id, String name, String lastName, Date birthDate) {
+    public UpdateUserRequest(int id, String name, String lastName, Date birthDate) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;

@@ -1,22 +1,22 @@
-package com.oktaylessons.postgreDemoSecond.api.searchServices;
+package com.oktaylessons.postgreDemoSecond.api.dto;
 
-import com.oktaylessons.postgreDemoSecond.entity.User;
+import com.oktaylessons.postgreDemoSecond.api.model.User;
 
-public class ResponseSearchUser {
+public class ResponseUser {
     private int serverCode;
     private String serverMessage;
     private User user;
 
+    public ResponseUser() {
+    }
+
     @Override
     public String toString() {
-        return "ResponseSearchUser{" +
+        return "ResponseUser{" +
                 "serverCode=" + serverCode +
                 ", serverMessage='" + serverMessage + '\'' +
                 ", user=" + user +
                 '}';
-    }
-
-    public ResponseSearchUser() {
     }
 
     public int getServerCode() {
@@ -43,7 +43,7 @@ public class ResponseSearchUser {
         this.user = user;
     }
 
-    public ResponseSearchUser(int serverCode, String serverMessage, User user) {
+    public ResponseUser(int serverCode, String serverMessage, User user) {
         this.serverCode = serverCode;
         this.serverMessage = serverMessage;
         this.user = user;

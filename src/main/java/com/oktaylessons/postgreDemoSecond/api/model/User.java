@@ -1,4 +1,4 @@
-package com.oktaylessons.postgreDemoSecond.entity;
+package com.oktaylessons.postgreDemoSecond.api.model;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
@@ -11,6 +11,7 @@ import java.util.Date;
 @Table(name ="userdemo")
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
     private int id;
     private String name;
